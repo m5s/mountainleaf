@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Premium Taiwanese and Chinese Teas">
+  <title>Mountain Leaf Tea</title>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" as="video" href="assets/tea.mp4" type="video/mp4">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"></noscript>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      LAUNCHING IN FEBRUARY 2025 FOR U.S. CUSTOMERS!
+    </div>
+  <!-- Sticky Nav -->
+  <div class="sticky-nav">
+    <!-- Left Desktop Navigation Links -->
+    <div class="nav-links">
+      <div class="nav-item">
+        Oolong Teas
+        <div class="dropdown">Coming Soon</div>
+      </div>
+      <div class="nav-item">
+        Black Teas
+        <div class="dropdown">Coming Soon</div>
+      </div>
+      <div class="nav-item">
+        White Teas
+        <div class="dropdown">Coming Soon</div>
+      </div>
+      <div class="nav-item">
+        Green Teas
+        <div class="dropdown">Coming Soon</div>
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMobileMenu()" style="display:none;">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Logo (center) -->
+    <div class="nav-logo">
+      <img src="assets/mountainleaflogo_small.png" alt="Mountain Leaf Tea Logo">
+    </div>
+
+    <!-- Shopping Cart Icon -->
+    <img src="assets/cart.png" alt="Shopping Cart" class="cart-icon">
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#" onclick="showComingSoon()">Oolong Teas <span class="menu-item-chevron">›</span></a>
+      <a href="#" onclick="showComingSoon()">Black Teas <span class="menu-item-chevron">›</span></a>
+      <a href="#" onclick="showComingSoon()">White Teas <span class="menu-item-chevron">›</span></a>
+      <a href="#" onclick="showComingSoon()">Green Teas <span class="menu-item-chevron">›</span></a>
+    </div>
+  </div>
+
+  <!-- Secondary Nav -->
+  <div class="secondary-nav">
+    <a href="#">New Arrivals</a>
+    <a href="#">Premium Teas</a>
+    <a href="#">Rare and Noteworthy</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="assets/tea.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-text-desktop">
+      <div class="hero-headline">Artisan Teas Ancient Origins</div>
+      <div class="hero-subheading">Premium Taiwanese and Chinese Teas</div>
+    </div>
+    <div class="hero-text-mobile">
+      <div class="hero-headline">Artisan Teas Ancient Origins</div>
+      <div class="hero-subheading">Premium Taiwanese and Chinese Teas</div>
+    </div>
+  </div>
+
+  <!-- Product Boxes -->
+  <div class="product-boxes">
+    <div class="product-box">
+      <img src="assets/oolong.png" alt="Oolong Teas">
+      <div class="product-box-overlay">
+        <h2>Oolong Teas</h2>
+        <p>Rich and aromatic semi-oxidized teas</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <img src="assets/black.png" alt="Black Teas">
+      <div class="product-box-overlay">
+        <h2>Black Teas</h2>
+        <p>Bold flavors with sweet undertones</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <img src="assets/white.png" alt="White Teas">
+      <div class="product-box-overlay">
+        <h2>White Teas</h2>
+        <p>Delicate, subtle, and highly prized</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <img src="assets/green.png" alt="Green Teas">
+      <div class="product-box-overlay">
+        <h2>Green Teas</h2>
+        <p>Fresh, grassy, and full of antioxidants</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Width Banner -->
+  <div class="banner">
+    <div class="banner-content">
+      <h2>SELECTED WITH CARE</h2>
+      <p>
+        At Mountain Leaf Tea, we carefully source the finest teas from premium gardens across Taiwan and China. 
+        Each tea is selected for its exceptional quality, distinctive character, and authentic representation of its origin.
+      </p>
+      <img src="assets/mountainleaflogo_round.png" alt="Mountain Leaf Tea Logo" class="banner-logo">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; mountainleaftea 2025 <br>
+    <a href="mailto:contact@mountainleaftea.com">contact@mountainleaftea.com</a>
+  </footer>
+
+  <script>
+    // Toggle mobile menu overlay
+    function toggleMobileMenu() {
+      const overlay = document.getElementById("mobileMenu");
+      const hamburger = document.querySelector(".hamburger");
+      overlay.classList.toggle("open");
+      hamburger.classList.toggle("active");
+    }
+
+    // Show coming soon message
+    function showComingSoon() {
+      alert("Coming Soon");
+      toggleMobileMenu(); // Close menu after showing message
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", function(event) {
+      const overlay = document.getElementById("mobileMenu");
+      const hamburger = document.querySelector(".hamburger");
+      if (event.target.closest(".mobile-menu-overlay") === null && 
+          event.target.closest(".hamburger") === null && 
+          overlay.classList.contains("open")) {
+        overlay.classList.remove("open");
+        hamburger.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
